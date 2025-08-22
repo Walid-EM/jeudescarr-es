@@ -13,11 +13,13 @@ try {
   // Vérifier si vite est installé
   console.log('📦 Vérification des dépendances...');
   
-  // Exécuter le build
+  // Exécuter le build avec le chemin complet de vite
   console.log('🔨 Exécution du build Vite...');
-  execSync('npx vite build', { 
+  const vitePath = './node_modules/.bin/vite';
+  execSync(`${vitePath} build`, { 
     stdio: 'inherit',
-    cwd: __dirname 
+    cwd: __dirname,
+    shell: true
   });
   
   console.log('✅ Build terminé avec succès !');
