@@ -14,6 +14,25 @@ function App() {
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col items-center justify-center p-4">
         <div className="w-full max-w-sm mx-auto">
 
+                    {/* Bouton tactile optimisé */}
+                    <motion.div
+            className="text-center mb-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+          >
+            <button
+              className="bg-blue-600 active:bg-blue-800 text-white font-bold 
+                         py-4 px-8 rounded-xl text-lg
+                         transition-all duration-150 active:scale-95
+                         min-h-[56px] w-full max-w-xs touch-manipulation
+                         shadow-lg active:shadow-md"
+
+            >
+              Hafsa tricheuse
+            </button>
+          </motion.div>
+
           {/* Grille de jeu centrée */}
           <motion.div
             className="mb-6"
