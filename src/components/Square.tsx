@@ -15,7 +15,6 @@ export const Square = ({
   square, 
   position, 
   isDragOver, 
-  isCorrectPosition,
   onTouchStart, 
   onTouchEnd,
   onClick 
@@ -75,7 +74,6 @@ export const Square = ({
           touch-manipulation
           shadow-lg hover:shadow-xl
           ${isDragOver ? 'ring-4 ring-blue-400 ring-offset-2 shadow-blue-300' : ''}
-          ${isCorrectPosition ? 'ring-3 ring-green-400 ring-offset-2 shadow-green-300' : ''}
           focus:outline-none focus:ring-2 focus:ring-blue-500
           transform hover:brightness-110
         `}
