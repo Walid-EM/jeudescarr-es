@@ -5,7 +5,6 @@ interface SquareProps {
   square: SquareData;
   position: number;
   isDragOver: boolean;
-  isCorrectPosition: boolean;
   onTouchStart: (position: number) => void;
   onTouchEnd: (position: number) => void;
   onClick?: () => void;

@@ -46,7 +46,6 @@ export const Grid = ({ positions, onMoveSquare }: GridProps) => {
     >
       {positions.map((squareId, position) => {
         const square = SQUARES[squareId];
-        const isCorrectPosition = squareId === position;
         const isSelected = selectedPosition === position;
         
         return (
@@ -55,7 +54,6 @@ export const Grid = ({ positions, onMoveSquare }: GridProps) => {
               square={square}
               position={position}
               isDragOver={isSelected}
-              isCorrectPosition={isCorrectPosition}
               onTouchStart={() => {}}
               onTouchEnd={() => {}}
               onClick={() => handleClick(position)}
