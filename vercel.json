@@ -1,6 +1,11 @@
 {
-  "buildCommand": "npm run build:vercel",
+  "buildCommand": "node build.js",
   "outputDirectory": "dist",
   "framework": "vite",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "functions": {
+    "app/api/**/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  }
 }
